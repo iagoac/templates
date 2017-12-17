@@ -1,0 +1,99 @@
+%% \documentclass[preprint,12pt,3p]{elsarticle}
+%% Use the option review to obtain double line spacing
+\documentclass[preprint,review,12pt]{elsarticle}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage[colorlinks]{hyperref}
+\usepackage{rotating}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{pdflscape}
+% disable labelindent
+\let\labelindent\relax
+\usepackage{enumitem}
+\usepackage{multirow}
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
+\usepackage{setspace} % \doublespacing
+\usepackage[utf8]{inputenc}
+% \usepackage[numbers,square]{natbib}
+% \usepackage{algorithm, algorithmic}
+\usepackage[linesnumbered, ruled, vlined]{algorithm2e}
+\usepackage{rotating}
+\usepackage{subfigure}
+
+% tikz libraries
+\usepackage{tkz-graph}
+\usepackage{verbatim}
+\usetikzlibrary{arrows,arrows.meta,shapes,decorations.pathmorphing, decorations.markings}
+\let\svtikzpicture\tikzpicture
+\def\tikzpicture{\noindent\svtikzpicture}
+
+
+\journal{Journal name}
+
+\begin{document}
+
+\begin{frontmatter}
+
+            
+\title{Article title}
+
+
+\author[label1]{Iago A. Carvalho\corref{cor1}}
+\ead{iagoac@dcc.ufmg.br}
+\ead[url]{http://www.iagoac.github.io}
+
+\author[label2]{Homer J. Simpson}
+\ead{homer@thesimpsons.com}
+
+\address[label1]{Department of Computer Science, Universidade Federal de Minas Gerais}
+
+\cortext[cor1]{I am corresponding author}
+
+\address[label2]{Twenty Century Fox, USA}
+
+\begin{abstract}
+There will be an abstract here.
+\end{abstract}
+
+\begin{keyword}
+Keyword 1 \sep Keyword 2 \sep Keyword 3 \sep Keyword 4 \sep Keyword 5
+\end{keyword}
+
+\end{frontmatter}
+
+
+% \linenumbers
+
+\section{Introduction} \label{sec:intro}
+
+
+
+\section*{Aknowledgments}
+This work was partially supported by the Brazilian National Council for Scientific and Technological Development (CNPq), the Foundation for Support of Research of the State of Minas Gerais, Brazil (FAPEMIG), and Coordination for the Improvement of Higher Education Personnel, Brazil (CAPES).
+
+
+\bibliographystyle{elsarticle-num}
+% \bibliographystyle{elsarticle-harv}
+% \bibliographystyle{elsarticle-num-names}
+% \bibliographystyle{model1a-num-names}
+% \bibliographystyle{model1b-num-names}
+% \bibliographystyle{model1c-num-names}
+% \bibliographystyle{model1-num-names}
+% \bibliographystyle{model2-names}
+% \bibliographystyle{model3a-num-names}
+% \bibliographystyle{model3-num-names}
+% \bibliographystyle{model4-names}
+% \bibliographystyle{model5-names}
+% \bibliographystyle{model6-num-names}
+
+\bibliography{bibsample}
+
+\end{document}
+
+%%
+%% End of file `elsarticle-template-num.tex'.
