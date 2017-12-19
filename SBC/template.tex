@@ -1,0 +1,90 @@
+\documentclass[12pt]{article}
+
+\usepackage{sbc-template}
+
+\usepackage[brazil]{babel} 
+\usepackage[latin1]{inputenc}  
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage[colorlinks]{hyperref}
+\usepackage{rotating}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{pdflscape}
+% disable labelindent
+\let\labelindent\relax
+\usepackage{enumitem}
+\usepackage{multirow}
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
+\usepackage{setspace} % \doublespacing
+% \usepackage[numbers,square]{natbib}
+% \usepackage{algorithm, algorithmic}
+\usepackage[linesnumbered, ruled, vlined]{algorithm2e}
+\usepackage{rotating}
+\usepackage{subfigure}
+
+% tikz libraries
+\usepackage{tkz-graph}
+\usepackage{verbatim}
+\usetikzlibrary{arrows,arrows.meta,shapes,decorations.pathmorphing, decorations.markings}
+\let\svtikzpicture\tikzpicture
+\def\tikzpicture{\noindent\svtikzpicture}
+
+\newtheorem{theorem}{Teorema}[section]
+\newtheorem{lemma}[theorem]{Lema}
+\newtheorem{proposition}[theorem]{Proposição}
+\newtheorem{corollary}[theorem]{Corolário}
+
+\newenvironment{proof}[1][Prova]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{definition}[1][Definição]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{example}[1][Exemplo]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{remark}[1][Observação]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+
+\newcommand{\qed}{\nobreak \ifvmode \relax \else
+      \ifdim\lastskip<1.5em \hskip-\lastskip
+      \hskip1.5em plus0em minus0.5em \fi \nobreak
+      \vrule height0.75em width0.5em depth0.25em\fi}
+           
+\sloppy
+
+\title{Título do artigo}
+
+\author{Iago A. Carvalho\inst{1}, Homer J. Simpson\inst{2}}
+
+\address{Departamento de Ciência da Computação - Universidade Federal de Minas Gerais \\
+Belo Horizonte - MG - Brasil
+\nextinstitute
+  Twenty Century Fox\\
+  Springfield, USA
+\email{iagoac@dcc.ufmg.br, homer@thesimpsons.com}
+}
+
+\begin{document} 
+
+\maketitle
+
+\begin{abstract}
+There will be an abstract here.
+\end{abstract}
+
+\begin{resumo} 
+Existirá um resumo aqui
+\end{resumo}
+
+\section{Introdução} \label{sec:intro}
+
+\section*{Agradecimentos}
+Este trabalho foi parcialmente suportado pelo Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq), pela Fundação de Amparo à Pesquisa do Estado de Minas Gerais (FAPEMIG), e pela Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (CAPES).
+
+\bibliographystyle{sbc}
+\bibliography{bibsample}
+
+\end{document}
