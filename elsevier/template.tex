@@ -7,14 +7,11 @@
 \usepackage{graphicx}
 \usepackage[retainorgcmds]{IEEEtrantools}
 \usepackage[colorlinks]{hyperref}
-\usepackage{rotating}
-\usepackage{booktabs}
 \usepackage{siunitx}
 \usepackage{pdflscape}
 % disable labelindent
 \let\labelindent\relax
 \usepackage{enumitem}
-\usepackage{multirow}
 \usepackage[normalem]{ulem}
 \useunder{\uline}{\ul}{}
 \usepackage{setspace} % \doublespacing
@@ -23,15 +20,24 @@
 % \usepackage{algorithm, algorithmic}
 \usepackage[linesnumbered, ruled, vlined]{algorithm2e}
 \usepackage{rotating}
-\usepackage{subfigure}
-
-% tikz libraries
+% \usepackage{subfigure}
+\usepackage{nicefrac}
+\usepackage{todonotes}
+\usepackage{hyperref}
+\usepackage{xspace}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+% \usepackage{floatrow}
+\usepackage{rotating, lscape, longtable, tabu, booktabs, siunitx, multirow}
+\usepackage[capitalise, noabbrev]{cleveref}
 \usepackage{tkz-graph}
 \usepackage{verbatim}
-\usetikzlibrary{arrows,arrows.meta,shapes,decorations.pathmorphing, decorations.markings}
-\let\svtikzpicture\tikzpicture
-\def\tikzpicture{\noindent\svtikzpicture}
+\usepackage{mathtools}
 
+\newcommand{\ie}{i.\,e.\xspace}
+\newcommand{\eg}{e.\,g.\xspace}
+\newcommand{\uset}[1]{\ifmmode\left\{\,#1\,\right\}\else\{\,#1\,\}\fi}
 
 \journal{Journal name}
 
@@ -74,8 +80,7 @@ Keyword 1 \sep Keyword 2 \sep Keyword 3 \sep Keyword 4 \sep Keyword 5
 
 
 \section*{Aknowledgments}
-This work was partially supported by the Brazilian National Council for Scientific and Technological Development (CNPq), the Foundation for Support of Research of the State of Minas Gerais, Brazil (FAPEMIG), and Coordination for the Improvement of Higher Education Personnel, Brazil (CAPES).
-
+This study was financed in part by the \emph{Coordenação de Aperfeiçoamento de Pessoal de Nível Superior - Brasil} (CAPES) - Finance Code 001, the \emph{Conselho Nacional de Desenvolvimento Científico e Tecnológico - Brasil} (CNPq), and the \emph{Fundação de Amparo à Pesquisa de Minas Gerais - Brasil} (FAPEMIG).
 
 \bibliographystyle{elsarticle-num}
 % \bibliographystyle{elsarticle-harv}
