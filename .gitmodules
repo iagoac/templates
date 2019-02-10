@@ -1,0 +1,12 @@
+[submodule "elsevier"]
+	path = elsevier
+	url = https://github.com/iagoac/elsevier
+[submodule "springer"]
+	path = springer
+	url = https://github.com/iagoac/springer
+[submodule "IEEE"]
+	path = IEEE
+	url = https://github.com/iagoac/IEEE
+[submodule "ENDM"]
+	path = ENDM
+	url = https://github.com/iagoac/ENDM
